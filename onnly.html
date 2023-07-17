@@ -39,11 +39,15 @@
       </form>
     </div>
   </div>
-
-  <script>
-    function changeBackground() {
-      document.body.classList.add("login");
+<script>
+  function changeBackground() {
+    var body = document.body;
+    if (body.classList.contains("login")) {
+      body.classList.remove("login");
+    } else {
+      body.classList.add("login");
     }
-  </script>
+  }
+</script>
 </body>
 </html>
